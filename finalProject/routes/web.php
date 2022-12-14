@@ -16,6 +16,8 @@ use App\Http\Controllers\homeControl;
 
 Route::get('/', [homeControl::class, 'index']);
 
+Route::get('/redirect', [homeControl::class, 'redirectFunc']);
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
