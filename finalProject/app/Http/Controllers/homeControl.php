@@ -15,10 +15,10 @@ class homeControl extends Controller
         $typeuser = Auth::user()->usertype;
 
         if($typeuser == '1'){
-            return view('admin.fypcoordpage');
+            return view('users.fypcoordpage');
         }
         else if ($typeuser == '2'){
-            return view('admin.supervisorpage');
+            return view('users.supervisorpage');
         }
         else{
             return view('home');
