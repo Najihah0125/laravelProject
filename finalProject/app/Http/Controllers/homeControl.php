@@ -17,6 +17,9 @@ class homeControl extends Controller
         if($typeuser == '1'){
             return view('admin.fypcoordpage');
         }
+        else if ($typeuser == '2'){
+            return view('admin.supervisorpage');
+        }
         else{
             return view('home');
         }
