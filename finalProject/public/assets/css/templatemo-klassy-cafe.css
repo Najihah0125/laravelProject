@@ -223,11 +223,11 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #fb5849!important;
+  color: rgb(100, 107, 255)!important;
 }
 
 .background-header .nav li a.active {
-  color: #fb5849!important;
+  color: rgb(100, 107, 255)!important;
 }
 
 .header-area {
@@ -315,12 +315,12 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fb5849!important;
+  color: rgb(100, 107, 255)!important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fb5849!important;
+  color: rgb(100, 107, 255)!important;
   opacity: 1;
 }
 
@@ -382,7 +382,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #fb5849!important;
+  color: rgb(100, 107, 255)!important;
   padding-left: 25px;
 }
 
@@ -522,7 +522,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #fb5849;
+  color: rgb(100, 107, 255);
 }
 
 @media (max-width: 1200px) {
@@ -541,7 +541,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #fb5849!important;
+    color: rgb(100, 107, 255)!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -599,7 +599,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #fb5849!important;
+    color: rgb(100, 107, 255)!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -657,7 +657,7 @@ banner
 }
 
 #top .left-content {
-  background-image: url(../images/top-left-bg.jpg);
+  background-color: rgb(100, 107, 255);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -674,7 +674,6 @@ banner
 }
 
 #top .left-content h4 {
-  font-family: 'Dancing Script', cursive;
   color: #fff;
   font-size: 54px;
   font-weight: 700;
@@ -1015,7 +1014,7 @@ menu
 #menu .owl-nav .owl-prev:before {
   display: inline-block;
   font-family: 'FontAwesome';
-  color: #fb5849;
+  color: rgb(100, 107, 255);
   font-size: 25px;
   font-weight: 700;
   content: '\f104';
@@ -1047,7 +1046,7 @@ menu
 #menu .owl-nav .owl-next:before {
   display: inline-block;
   font-family: 'FontAwesome';
-  color: #fb5849;
+  color: rgb(100, 107, 255);
   font-size: 25px;
   font-weight: 700;
   content: '\f105';
@@ -1592,7 +1591,7 @@ responsive
 
 #preloader {
   overflow: hidden;
-  background-color: #fb5849;
+  background-color: rgb(100, 107, 255);
   left: 0;
   right: 0;
   top: 0;
