@@ -18,6 +18,8 @@ Route::get('/', [homeControl::class, 'index']);
 
 Route::get('/redirect', [homeControl::class, 'redirectFunc']);
 
+Route::get('/createpage', [homeControl::class, 'create']);
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
