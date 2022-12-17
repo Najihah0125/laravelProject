@@ -96,15 +96,17 @@ https://templatemo.com/tm-558-klassy-cafe
         <div class="container">
                 
                     <div class="contact-form">
-                        <form id="contact" action="" method="post">
+                        <form id="contact" action="/addProject" method="post">
+                            @csrf
                           <div class="row">
                             <div class="col-lg-12">
                                 <h4>Create a FYP Project</h4>
                             </div>
                             <div class="col-lg-12">
+                                Project ID<b style="color:red;">*</b> <input name="project_id" type="text" id="name" placeholder="Enter project ID" required>
                                 Project Title<b style="color:red;">*</b> <input name="title" type="text" id="name" placeholder="Enter title of project" required>
                                 Project Category<b style="color:red;">*</b> 
-                                <select value="Category" name="category" id="time">
+                                <select value="category" name="category" id="time">
                                     <option value="">Choose category of project</style></option>
                                     <option name="development" id="Breakfast">Development</option>
                                     <option name="research" id="Lunch">Research</option>
@@ -113,11 +115,11 @@ https://templatemo.com/tm-558-klassy-cafe
                                 Supervisor ID<b style="color:red;">*</b> <input name="supervisor_id" type="text" id="phone" placeholder="Assign a supervisor" required="">
                                 Examiner 1 ID<b style="color:red;">*</b> <input name="examineer1_id" type="text" id="phone" placeholder="Assign first examineer" required="">
                                 Examiner 2 ID<b style="color:red;">*</b> <input name="examineer2_id" type="text" id="phone" placeholder="Assign second examineer" required="">
-                                <input name="start_date" id="date" type="hidden" value="">
-                                <input name="end_date" id="date" type="hidden" value="">
-                                <input name="duration" id="date" type="hidden" value="">
-                                <input name="progress" id="date" type="hidden" value="">
-                                <input name="status" id="date" type="hidden" value="">
+                                Start Date <input name="start_date" id="date" type="date">
+                                End Date<input name="end_date" id="date" type="date">
+                                <input name="duration" id="date" type="hidden" value=4>
+                                <input name="progress" id="date" type="hidden" value="Milestone 1">
+                                <input name="status" id="date" type="hidden" value="On-Track">
                                 
                                 <br><br>
                                 <button type="submit" id="form-submit" class="main-button-icon">Submit</button>

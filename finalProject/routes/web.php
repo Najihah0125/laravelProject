@@ -20,6 +20,8 @@ Route::get('/redirect', [homeControl::class, 'redirectFunc']);
 
 Route::get('/createpage', [homeControl::class, 'create']);
 
+Route::POST('/addProject', [homeControl::class, 'addProj']);
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
