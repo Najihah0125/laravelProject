@@ -513,8 +513,9 @@ header
   background-color: #1e1e1e;
 }
 
+/* adjust header size so that jetstream account button not oversize */
 .header-area.header-sticky {
-  min-height: 80px;
+  min-height: 90px;
 }
 
 .header-area .nav {
