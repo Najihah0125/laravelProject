@@ -22,6 +22,8 @@ Route::get('/createpage', [homeControl::class, 'create']);
 
 Route::POST('/addProject', [homeControl::class, 'addProj']);
 
+Route::get('/listpage', [homeControl::class, 'dispList']);
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

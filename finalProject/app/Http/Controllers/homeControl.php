@@ -49,4 +49,10 @@ class homeControl extends Controller
 
         return redirect('createpage'); //url
     }
+
+    function dispList(){
+        $proj = Project::paginate(5);
+        return view('fypcoord.listpage', ['list'=>$proj]);
+
+    }
 }
