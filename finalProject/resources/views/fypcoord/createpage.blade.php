@@ -58,7 +58,7 @@ https://templatemo.com/tm-558-klassy-cafe
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" >Home</a></li>
-                            <li class="scroll-to-section"><a href="fypcoord.createpage" class="active">Create Project</a></li>
+                            <li class="scroll-to-section"><a href="createpage" class="active">Create Project</a></li>
                             <li class="scroll-to-section"><a href="listpage" >Project List</a></li>
                             
                             <li>
@@ -130,7 +130,7 @@ https://templatemo.com/tm-558-klassy-cafe
                 
         </div>
     </section>
-    <!-- ***** Reservation Area Ends ***** -->
+    <!-- ***** Create Project Form ***** -->
 
     
     
