@@ -57,7 +57,7 @@ https://templatemo.com/tm-558-klassy-cafe
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" >Home</a></li>
+                            <li class="scroll-to-section"><a href="redirect" >Home</a></li>
                             <li class="scroll-to-section"><a href="createpage" class="active">Create Project</a></li>
                             <li class="scroll-to-section"><a href="listpage" >Project List</a></li>
                             
