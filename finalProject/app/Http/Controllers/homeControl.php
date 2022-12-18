@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Project;
+use Illuminate\Support\Facades\DB;
 
 class homeControl extends Controller
 {
@@ -54,5 +55,34 @@ class homeControl extends Controller
         $proj = Project::paginate(5);
         return view('fypcoord.listpage', ['list'=>$proj]);
 
+    }
+
+    function dispListUpd(){
+        // $proj = Project::paginate(5);
+        // return view('supervisor.updateproject', ['list'=>$proj]);
+        
+        // $lect = Auth::user()->lect_id;
+
+        // if($lect == 'L001'){
+        //     $proj = DB::table('projects')->where('supervisor_id', 'L001');
+        //     return view('supervisor.updateproject', ['list'=>$proj]);
+        // }
+        // else if ($lect == '2'){
+        //     return view('users.supervisorpage');
+        // }
+        // else{
+        //     return view('home');
+        // }
+
+        $lect = Auth::user()->lect_id;
+
+        if($lect == 'L001'){
+            $proj = DB::select('select * from projects where supervisor_id = ?', ['L001']);
+            return view('supervisor.updateproject', ['list'=>$proj]);
+        }
+       
+        else{
+            return view('home');
+        }
     }
 }

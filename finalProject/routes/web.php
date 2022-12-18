@@ -24,6 +24,8 @@ Route::POST('/addProject', [homeControl::class, 'addProj']);
 
 Route::get('/listpage', [homeControl::class, 'dispList']);
 
+Route::get('/updatelistpage', [homeControl::class, 'dispListUpd']);
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
