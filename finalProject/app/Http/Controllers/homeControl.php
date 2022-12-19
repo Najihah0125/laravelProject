@@ -64,6 +64,10 @@ class homeControl extends Controller
             $proj = DB::select('select * from projects where supervisor_id = ?', ['L001']);
             return view('supervisor.updateproject', ['list'=>$proj]);
         }
+        else if ($lect == 'L002'){
+            $proj = DB::select('select * from projects where supervisor_id = ?', ['L002']);
+            return view('supervisor.updateproject', ['list'=>$proj]);
+        }
         else{
             return view('home');
         }

@@ -26,6 +26,10 @@ Route::get('/listpage', [homeControl::class, 'dispList']);
 
 Route::get('/updatelistpage', [homeControl::class, 'dispListUpd']);
 
+Route::get('/upd/{project_id}', [homeControl::class, 'editProj']);
+
+Route::POST('/edit', [homeControl::class, 'editedProj']);
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

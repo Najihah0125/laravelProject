@@ -9,4 +9,6 @@ class Project extends Model
 {
     use HasFactory;
     public $timestamps = false;
+    protected $primaryKey = 'project_id';
+    protected $keyType = 'string';
 }
