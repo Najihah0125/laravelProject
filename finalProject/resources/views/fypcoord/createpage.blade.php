@@ -105,10 +105,10 @@
                                     <option name="development" id="Breakfast">Development</option>
                                     <option name="research" id="Lunch">Research</option>
                                 </select>
-                                Student ID<b style="color:red;">*</b> <input name="student_id" type="text" id="phone" placeholder="Assign a student" required="">
-                                Supervisor ID<b style="color:red;">*</b> <input name="supervisor_id" type="text" id="phone" placeholder="Assign a supervisor" required="">
-                                Examiner 1 ID<b style="color:red;">*</b> <input name="examineer1_id" type="text" id="phone" placeholder="Assign first examineer" required="">
-                                Examiner 2 ID<b style="color:red;">*</b> <input name="examineer2_id" type="text" id="phone" placeholder="Assign second examineer" required="">
+                                Student ID<b style="color:red;">*</b> <input name="student_id" type="text" id="phone" placeholder="Assign a student" required>
+                                Supervisor ID<b style="color:red;">*</b> <input name="supervisor_id" type="text" id="phone" placeholder="Assign a supervisor" required>
+                                Examiner 1 ID<b style="color:red;">*</b> <input name="examineer1_id" type="text" id="phone" placeholder="Assign first examineer" required>
+                                Examiner 2 ID<b style="color:red;">*</b> <input name="examineer2_id" type="text" id="phone" placeholder="Assign second examineer" required>
                                 Start Date <input name="start_date" id="date" type="date">
                                 End Date<input name="end_date" id="date" type="date">
                                 <input name="duration" id="date" type="hidden" value=4>
