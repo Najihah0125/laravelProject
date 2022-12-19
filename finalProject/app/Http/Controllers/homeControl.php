@@ -68,6 +68,34 @@ class homeControl extends Controller
             $proj = DB::select('select * from projects where supervisor_id = ?', ['L002']);
             return view('supervisor.updateproject', ['list'=>$proj]);
         }
+        else if ($lect == 'L003'){
+            $proj = DB::select('select * from projects where supervisor_id = ?', ['L003']);
+            return view('supervisor.updateproject', ['list'=>$proj]);
+        }
+        else if ($lect == 'L004'){
+            $proj = DB::select('select * from projects where supervisor_id = ?', ['L004']);
+            return view('supervisor.updateproject', ['list'=>$proj]);
+        }
+        else if ($lect == 'L005'){
+            $proj = DB::select('select * from projects where supervisor_id = ?', ['L005']);
+            return view('supervisor.updateproject', ['list'=>$proj]);
+        }
+        else if ($lect == 'L006'){
+            $proj = DB::select('select * from projects where supervisor_id = ?', ['L006']);
+            return view('supervisor.updateproject', ['list'=>$proj]);
+        }
+        else if ($lect == 'L007'){
+            $proj = DB::select('select * from projects where supervisor_id = ?', ['L007']);
+            return view('supervisor.updateproject', ['list'=>$proj]);
+        }
+        else if ($lect == 'L008'){
+            $proj = DB::select('select * from projects where supervisor_id = ?', ['L008']);
+            return view('supervisor.updateproject', ['list'=>$proj]);
+        }
+        else if ($lect == 'L009'){
+            $proj = DB::select('select * from projects where supervisor_id = ?', ['L009']);
+            return view('supervisor.updateproject', ['list'=>$proj]);
+        }
         else{
             return view('home');
         }
