@@ -60,7 +60,6 @@ https://templatemo.com/tm-558-klassy-cafe
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="redirect">Home</a></li>
-                            <li class="scroll-to-section"><a href="createpage">Create Project</a></li>
                             <li class="scroll-to-section"><a href="listpage" class="active">Project List</a></li>
 
                             <li>
@@ -135,7 +134,7 @@ https://templatemo.com/tm-558-klassy-cafe
                         <td><?php echo $x->progress; ?></td>
                         <td><?php echo $x->status; ?></td>
                         
-                        <td><a href = "upd/".$x['project_id']}}><b style="color:blue; text-decoration: underline;">Update</b></a></td>
+                        <td><a href = <?php echo "upd/".$x->project_id; ?>><b style="color:blue; text-decoration: underline;">Update</b></a></td>
                     </tr>
                     @endforeach
                 </tbody>
