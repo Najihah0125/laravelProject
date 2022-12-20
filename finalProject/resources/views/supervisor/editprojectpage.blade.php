@@ -13,15 +13,15 @@
     <title>FYP Management System</title>
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('assets/css/bootstrap.min.css')}}">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="{{URL::asset('assets/css/font-awesome.css')}}">
 
-    <link rel="stylesheet" href="assets/css/templatemo-klassy-cafe.css">
+    <link rel="stylesheet" href="{{URL::asset('assets/css/templatemo-klassy-cafe.css')}}">
 
-    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+    <link rel="stylesheet" href="{{URL::asset('assets/css/owl-carousel.css')}}">
 
-    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="{{URL::asset('assets/css/lightbox.css')}}">
 
     </head>
     
@@ -46,7 +46,7 @@
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="index.html" class="logo">
-                            <img src="assets/images/FYP-logo.png" align="klassy cafe html template">
+                            <img src="{{URL::asset('assets/images/FYP-logo.png')}}">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -93,16 +93,16 @@
                             @csrf
                           <div class="row">
                             <div class="col-lg-12">
-                                <h4><?php echo "Edit Project ".$x->project_id." Details"; ?></h4>
+                                <h4>Edit Project Details</h4>
                             </div>
                             <div class="col-lg-12">
-                                <input name="project_id" type="hidden" id="name" value="{{$x['project_id']}}" >
-                                <input name="title" type="hidden" id="name" value="{{$x['title']}}" >
-                                <input name="category" type="hidden" id="name" value="{{$x['category']}}" >
-                                <input name="student_id" type="hidden" id="phone" value="{{$x['student_id']}}" >
-                                <input name="supervisor_id" type="hidden" id="phone" value="{{$x['supervisor_id']}}" >
-                                <input name="examineer1_id" type="hidden" id="phone" value="{{$x['examineer1_id']}}" >
-                                <input name="examineer2_id" type="hidden" id="phone" value="{{$x['examineer2_id']}}" >
+                                <input name="project_id" type="hidden" id="name" value="{{$x['project_id']}}" required>
+                                Project Title<input name="title" type="text" id="name" value="{{$x['title']}}" readonly>
+                                <input name="category" type="hidden" id="name" value="{{$x['category']}}" required>
+                                <input name="student_id" type="hidden" id="phone" value="{{$x['student_id']}}" required>
+                                <input name="supervisor_id" type="hidden" id="phone" value="{{$x['supervisor_id']}}" required>
+                                <input name="examineer1_id" type="hidden" id="phone" value="{{$x['examineer1_id']}}" required>
+                                <input name="examineer2_id" type="hidden" id="phone" value="{{$x['examineer2_id']}}" required>
                                 Start Date<b style="color:red;">*</b>  <input name="start_date" id="date" type="date" value="{{$x['start_date']}}" required>
                                 End Date<b style="color:red;">*</b> <input name="end_date" id="date" type="date" value="{{$x['end_date']}}" required>
                                 Duration<b style="color:red;">*</b> <input name="duration" id="date" type="number" value="{{$x['duration']}}" required>
@@ -136,26 +136,26 @@
     
     
     <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <script src="{{URL::asset('assets/js/jquery-2.1.0.min.js')}}"></script>
 
     <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="{{URL::asset('assets/js/popper.js')}}"></script>
+    <script src="{{URL::asset('assets/js/bootstrap.min.js')}}"></script>
 
     <!-- Plugins -->
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/accordions.js"></script>
-    <script src="assets/js/datepicker.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/slick.js"></script> 
-    <script src="assets/js/lightbox.js"></script> 
-    <script src="assets/js/isotope.js"></script> 
+    <script src="{{URL::asset('assets/js/owl-carousel.js')}}"></script>
+    <script src="{{URL::asset('assets/js/accordions.js')}}"></script>
+    <script src="{{URL::asset('assets/js/datepicker.js')}}"></script>
+    <script src="{{URL::asset('assets/js/scrollreveal.min.js')}}"></script>
+    <script src="{{URL::asset('assets/js/waypoints.min.js')}}"></script>
+    <script src="{{URL::asset('assets/js/jquery.counterup.min.js')}}"></script>
+    <script src="{{URL::asset('assets/js/imgfix.min.js')}}"></script> 
+    <script src="{{URL::asset('assets/js/slick.js')}}"></script> 
+    <script src="{{URL::asset('assets/js/lightbox.js')}}"></script> 
+    <script src="{{URL::asset('assets/js/isotope.js')}}"></script> 
     
     <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
+    <script src="{{URL::asset('assets/js/custom.js')}}"></script>
     <script>
 
         $(function() {
