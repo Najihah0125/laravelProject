@@ -48,7 +48,7 @@
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="index.html" class="logo">
-                            <img src="assets/images/FYP-logo.png" align="klassy cafe html template">
+                            <img src="assets/images/FYP-logo.png">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -61,8 +61,7 @@
                                 @if (Route::has('login'))
                                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                                     @auth
-                            <li><a href="{{ url('/dashboard') }}"
-                                    class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a></li>
+                            
                             <li>
                                 <x-app-layout>
                                 </x-app-layout>
