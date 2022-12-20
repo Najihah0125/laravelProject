@@ -48,7 +48,7 @@ class homeControl extends Controller
 
         $proj->save();
 
-        return redirect('createpage'); //url
+        return redirect('listpage'); //url
     }
 
     function dispList(){
