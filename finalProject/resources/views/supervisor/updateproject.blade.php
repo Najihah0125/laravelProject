@@ -116,7 +116,7 @@
                     <tr>
                         
                         <th scope="row"><?php echo $x->project_id; ?></th>
-                        <td><?php echo $x->title ?></td>
+                        <td><?php echo $x->title; ?></td>
                         <td><?php echo $x->category; ?></td>
                         <td><?php echo $x->student_id; ?></td>
                         <td><?php echo $x->supervisor_id; ?></td>
@@ -128,7 +128,7 @@
                         <td><?php echo $x->progress; ?></td>
                         <td><?php echo $x->status; ?></td>
                         
-                        <td><a href = <?php echo "upd/".$x->project_id; ?>><b style="color:blue; text-decoration: underline;">Update</b></a></td>
+                        <td><a href = <?php echo 'upd/'.$x->project_id; ?>><b style="color:blue; text-decoration: underline;">Update</b></a></td>
                     </tr>
                     @endforeach
                 </tbody>
