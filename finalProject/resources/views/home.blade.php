@@ -10,14 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Klassy Cafe - Restaurant HTML Template</title>
-<!--
-    
-TemplateMo 558 Klassy Cafe
+    <title>FYP Management System</title>
 
-https://templatemo.com/tm-558-klassy-cafe
-
--->
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
@@ -52,7 +46,7 @@ https://templatemo.com/tm-558-klassy-cafe
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="index.html" class="logo">
-                            <img src="assets/images/FYP-logo.png" align="klassy cafe html template">
+                            <img src="assets/images/FYP-logo.png">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
