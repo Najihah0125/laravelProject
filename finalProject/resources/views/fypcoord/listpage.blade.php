@@ -3,7 +3,7 @@
 
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="">Home</a></li>
+                            <li class="scroll-to-section"><a href="redirect">Home</a></li>
                             <li class="scroll-to-section"><a href="createpage">Create Project</a></li>
                             <li class="scroll-to-section"><a href="listpage" class="active">Project List</a></li>
 
