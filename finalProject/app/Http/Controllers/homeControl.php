@@ -13,6 +13,7 @@ class homeControl extends Controller
         return view('home');
     }
 
+    // Redirect user to its page
     function redirectFunc(){
         $typeuser = Auth::user()->usertype;
 
@@ -28,6 +29,7 @@ class homeControl extends Controller
         return view('fypcoord.createpage'); //page
     }
 
+    // Create new project
     function addProj(Request $req){
         $proj = new Project;
         $proj->project_id = $req->project_id;
@@ -48,6 +50,7 @@ class homeControl extends Controller
         return redirect('listpage'); //url
     }
 
+    // display list of project
     function dispList(){
         $proj = Project::paginate(5);
         return view('fypcoord.listpage', ['list'=>$proj]);
@@ -55,7 +58,7 @@ class homeControl extends Controller
     }
 
     function dispListUpd(){
-        $lect = Auth::user()->lect_id;
+        $lect = Auth::user()->lect_id; //identify which supervisor has logged in
 
         if($lect == 'L001'){
             $proj = DB::select('select * from projects where supervisor_id = ?', ['L001']);
@@ -98,11 +101,13 @@ class homeControl extends Controller
         }
     }
 
+    // display project details of the selected project
     function editProj($id){
         $proj = Project::find($id);
         return view('supervisor.editprojectpage', ['x'=>$proj]);
     }
 
+    // update the details of the project
     function editedProj(Request $req){
         $proj = Project::find($req->project_id);
         
