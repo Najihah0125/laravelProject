@@ -56,6 +56,7 @@ class homeControl extends Controller
         return view('fypcoord.listpage', ['list'=>$proj]);
 
     }
+    // comment
 
     function dispListUpd(){
         $lect = Auth::user()->lect_id; //identify which supervisor has logged in
